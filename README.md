@@ -1,109 +1,182 @@
-# CogniFlow – Adaptive Learning Platform
+# 🧠 CogniFlow Adaptive Learning Platform
 
-## Overview
+An AI-powered adaptive learning platform designed to deliver personalized learning experiences through intelligent recommendations, adaptive assessments, cognitive analytics, and role-based learning environments.
 
-CogniFlow is an AI-powered adaptive learning platform designed to deliver personalized learning experiences based on individual learner performance, engagement, and mastery levels. The platform dynamically adjusts learning paths, tracks progress, and provides intelligent recommendations to improve learning outcomes.
+The platform helps learners progress efficiently by analyzing learning behavior, tracking mastery levels, and providing customized educational pathways.
 
-## Features
+---
 
-### Learner Module
+## 🚀 Key Features
+
+### 👨‍🎓 Learner Module
 
 * Personalized learning dashboard
 * Adaptive course recommendations
-* Progress tracking and analytics
+* AI-powered tutor assistance
+* Interactive quizzes and assessments
+* Progress tracking and performance analytics
 * Learning streak monitoring
-* Mastery-based assessments
-* Interactive learning experience
+* Mastery-based learning paths
 
-Screenshots:- 
-Learner Course.png 
-Learner Dashboard.png
-Learner Quiz.png
-Learner Users.png
-Knowledgraph.png
-
-### Admin Module
+### 👨‍💼 Admin Module
 
 * User management
 * Course management
-* Learning analytics dashboard
+* Quiz management
+* Platform analytics
+* Learning insights dashboard
 * Content moderation
-* Performance monitoring
-* Platform configuration
 
-Screenshots:- 
-Admin Course.png 
-Admin Dashboard.png
-Admin Quiz.png
-Admin Users.png
+### 👨‍🏫 Creator Module
 
-### Creator Module
-
-* Course creation and management
-* Assessment creation
-* Content publishing
-* Learner performance insights
+* Course creation and publishing
+* Quiz creation and management
 * Content analytics
+* Learner performance monitoring
+* Content lifecycle management
 
-Screenshots:- 
-Creaator Course.png 
-Creator Dashboard.png
-Creator Quiz.png
+### 🤖 AI Features
 
-### Authentication & Security
+* AI Tutor
+* Adaptive Learning Recommendations
+* Knowledge Graph Visualization
+* Performance Analytics
+* Intelligent Learning Support
 
-* Secure authentication using Supabase Auth
-* Session management
-* Protected routes
-* Role-based access control
+---
 
-## Tech Stack
+# 📸 Application Screenshots
 
-### Frontend
+## Learner Module
+
+### Learner Dashboard
+
+![Learner Dashboard](screenshots/learner-dashboard.png)
+
+### Learner Courses
+
+![Learner Courses](screenshots/learner-courses.png)
+
+### Learner Quizzes
+
+![Learner Quizzes](screenshots/learner-quizzes.png)
+
+### AI Tutor
+
+![AI Tutor](screenshots/ai-tutor.png)
+
+---
+
+## Admin Module
+
+### Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### User Management
+
+![Admin Users](screenshots/admin-users.png)
+
+### Course Management
+
+![Admin Course](screenshots/admin-course.png)
+
+### Quiz Management
+
+![Admin Quiz](screenshots/admin-quiz.png)
+
+---
+
+## Creator Module
+
+### Creator Dashboard
+
+![Creator Dashboard](screenshots/creator-dashboard.png)
+
+### Creator Courses
+
+![Creator Courses](screenshots/creator-courses.png)
+
+### Creator Quiz Management
+
+![Creator Quiz](screenshots/creator-quiz.png)
+
+---
+
+## Knowledge Graph
+
+### Learning Knowledge Graph
+
+![Knowledge Graph](screenshots/knowledge-graph.png)
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                     ┌─────────────────┐
+                     │     Frontend    │
+                     │ React + Vite TS │
+                     └────────┬────────┘
+                              │
+                              ▼
+                    ┌──────────────────┐
+                    │ Supabase Auth    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │ PostgreSQL DB    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                 ┌─────────────────────────┐
+                 │ Learning Analytics      │
+                 │ Recommendation Engine   │
+                 └───────────┬─────────────┘
+                             │
+                             ▼
+                  Personalized Learning
+```
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
 
 * React
 * TypeScript
 * Vite
-* React Router
+* React Router DOM
 * Tailwind CSS
 * Framer Motion
 * Lucide React
 
-### Backend Services
+## Backend Services
 
 * Supabase
-* PostgreSQL Database
+* PostgreSQL
 * Supabase Authentication
 * Supabase Storage
 * Supabase Realtime
 
-### State Management & Utilities
+## State Management
 
-* TanStack Query (React Query)
-* Sonner Toast Notifications
+* TanStack Query
+* React Hooks
 
-## System Architecture
+## Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+# 📂 Project Structure
 
 ```text
-Frontend (React + TypeScript)
-            │
-            ▼
-     Supabase Services
-     ├── Authentication
-     ├── PostgreSQL Database
-     ├── Storage
-     └── Realtime Services
-            │
-            ▼
-      Learning Analytics
-            │
-            ▼
- Adaptive Recommendation Engine
-```
-
-## Project Structure
-
-```bash
 src/
 ├── components/
 ├── pages/
@@ -111,92 +184,107 @@ src/
 │   ├── admin/
 │   └── creator/
 ├── layouts/
+├── hooks/
 ├── integrations/
 │   └── supabase/
-├── hooks/
-├── lib/
 ├── data/
+├── lib/
 ├── App.tsx
 └── main.tsx
+
+screenshots/
+├── admin-dashboard.png
+├── admin-users.png
+├── admin-course.png
+├── admin-quiz.png
+├── creator-dashboard.png
+├── creator-courses.png
+├── creator-quiz.png
+├── learner-dashboard.png
+├── learner-courses.png
+├── learner-quizzes.png
+├── ai-tutor.png
+└── knowledge-graph.png
 ```
 
-## Key Functionalities
+---
 
-### Adaptive Learning
+# ⚙️ Installation
 
-The platform continuously analyzes learner interactions and performance to provide personalized learning experiences.
-
-### Progress Monitoring
-
-Track:
-
-* Course completion
-* Learning streaks
-* Assessment scores
-* Mastery levels
-* Engagement metrics
-
-### Analytics Dashboard
-
-Provides insights into:
-
-* Learner performance
-* Course effectiveness
-* Completion rates
-* Engagement trends
-
-## Installation
-
-### Clone Repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/cogniflow.git
-cd cogniflow
+git clone https://github.com/Anchal-Koli/CogniFlow-Adaptive.git
 ```
 
-### Install Dependencies
+## Navigate to Project
+
+```bash
+cd CogniFlow-Adaptive
+```
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Configure Environment Variables
+## Configure Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the root directory:
 
 ```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
 ```
 
-### Start Development Server
+## Run Development Server
 
 ```bash
 npm run dev
 ```
 
-### Build Production Version
+## Create Production Build
 
 ```bash
 npm run build
 ```
 
-## Future Enhancements
+---
 
-* AI-powered recommendation engine
+# 🔐 Authentication
+
+The platform uses Supabase Authentication for:
+
+* Secure user registration
+* User login and logout
+* Session management
+* Protected routes
+* Role-based access control
+
+---
+
+# 🎯 Future Enhancements
+
+* AI-generated quizzes
 * Learning behavior prediction
 * Cognitive profile analysis
 * Gamification system
 * Real-time collaboration
-* AI-generated quizzes
-* Learning path optimization
+* Personalized AI study plans
+* Advanced recommendation engine
+* Learning outcome forecasting
 
-## Author
+---
+
+# 👩‍💻 Author
 
 **Anchal Koli**
 
-B.Tech CSE (AI & ML)
+B.Tech Computer Science Engineering (AI & ML)
 
-## License
+---
 
-This project is developed for educational and research purposes.
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
